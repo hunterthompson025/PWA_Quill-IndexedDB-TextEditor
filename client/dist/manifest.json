@@ -31,8 +31,8 @@
       "type": "image/png"
     }
   ],
-  "name": "WPA Quill",
-  "short_name": "Quill",
+  "name": "jate text-editor",
+  "short_name": "jate",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./",
