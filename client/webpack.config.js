@@ -8,8 +8,7 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js',
-      header: './src/js/header.js'
+      install: './src/js/install.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -23,14 +22,14 @@ module.exports = () => {
 
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: './src-sw.js',
+        swDest: 'src-sw.js',
       }),
 
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'WPA Quill',
-        short_name: 'Quill',
+        name: 'jate text-editor',
+        short_name: 'jate',
         description: 'Leave all your personal memoirs here!',
         background_color: '#1e224a',
         theme_color: '#3bffff',

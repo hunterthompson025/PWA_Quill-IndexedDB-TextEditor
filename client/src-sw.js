@@ -38,8 +38,3 @@ registerRoute(
     ],
   }),
 );
-
-offlineFallback({
-  pageFallback: '/index.html',
-  imageFallback: '/images/logo.png'
-});
